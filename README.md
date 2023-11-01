@@ -16,6 +16,7 @@ Some of the best functions with small code size are **MurmurOAAT**, **RSHash**, 
 ### Collisions & Avalanching
 
 ```
+                       |        Collisions           |  Avalanching
 Hashing function       | random 16B |  words + names | words + names
 =====================================================================
 FNV1a                  |     0.20%  |     45,  0.01% |        98.0
