@@ -7,6 +7,8 @@ gcc -std=c99 test_minimal_hash.c farmhash.c -O2 -o test_hash
 ./test_hash words_names.txt
 ```
 
+On a fast 64-bit machine, the test suite runs for about 17 seconds. On a slower 32-bit machine, it might take a few minutes.
+
 ## Results
 Some of the best hash functions with small code size are **MurmurOAAT**, **RSHash**, **FNV1a** and **SDBM**. However, depending on your use case, you might want to consider using a good optimized hashing function, such as FarmHash or Murmur3.
 
