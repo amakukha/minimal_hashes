@@ -36,6 +36,10 @@ FarmHash_fingerprint64 |     0.19%  |     36,  0.01% |       100.0  <-- best
 CRC32                  |     0.20%  |     45,  0.01% |        99.8
 ```
 
+Adler32 is the only algorithm that performs poorly and produces a lot of collisions for 16-byte random buffers. It is a truly terrible hashing function!
+
+Poor performance on words and names is an indication of poor quality of a hashing algorithm. That's why I would not recommend any algorithm which has more than 0.01% collisions on this dataset.
+
 ### Speed
 ```
 Hashing function       |                   Time, ms
