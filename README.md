@@ -1,10 +1,7 @@
 # minimal_hashes
 Comparison of hashing functions with small code size.
 
-This is full code for StackOverflow answer: https://stackoverflow.com/a/77342581/5407270
-
 ### How to run? 
-
 ```
 gcc -std=c99 test_minimal_hash.c farmhash.c -O2 -o test_hash
 ./test_hash words_names.txt
@@ -65,4 +62,6 @@ CRC32 (bit-by-bit)     |    1189.6  |     2091.1  |         23.0
 CRC32 (table-driven)   |     262.0  |      667.3  |         11.1
 ```
 
+For timings, I compiled and ran my code on an Apple M1 Pro machine. You will likely get different speeds on Intel x86-64 architecture, especially for FarmHash, which is heavily optimized for Intel instruction sets. But the general picture will likely stay the same.
 
+P.S. This repo contains full code for StackOverflow answer: https://stackoverflow.com/a/77342581/5407270
