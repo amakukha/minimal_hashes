@@ -8,7 +8,7 @@ gcc -std=c99 test_minimal_hash.c farmhash.c -O2 -o test_hash
 ```
 
 ## Results
-Some of the best functions with small code size are **MurmurOAAT**, **RSHash**, **FNV1a** and **SDBM**. However, depending on your use case, you might want to consider using a good optimized hashing function, such as FarmHash or Murmur3.
+Some of the best hash functions with small code size are **MurmurOAAT**, **RSHash**, **FNV1a** and **SDBM**. However, depending on your use case, you might want to consider using a good optimized hashing function, such as FarmHash or Murmur3.
 
 ### Collisions & Avalanching
 
